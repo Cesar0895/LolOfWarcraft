@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">LolOfWarcraft</string>
+    <string name="vegeta">Vegeta</string>
+    <string name="goku">Goku</string>
+    <string name="textview">TextView</string>
+    <string name="todo">TODO</string>
+
 </resources>

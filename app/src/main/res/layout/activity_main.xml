@@ -11,11 +11,9 @@
         android:id="@+id/lblNombreP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="12dp"
         android:layout_marginStart="36dp"
-        android:layout_marginTop="16dp"
-        android:text="Goku "
-        app:layout_constraintBottom_toTopOf="@+id/imageView"
+        android:layout_marginTop="17dp"
+        android:text="@string/goku"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -23,11 +21,9 @@
         android:id="@+id/lblNombreP2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="25dp"
-        android:layout_marginEnd="60dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginTop="16dp"
-        android:text="Vegeta"
-        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        android:text="@string/vegeta"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -35,66 +31,85 @@
         android:id="@+id/imageView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="17dp"
+        android:layout_marginBottom="7dp"
         android:layout_marginEnd="313dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="47dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        android:layout_marginTop="11dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPosionP1"
         app:layout_constraintEnd_toStartOf="@+id/imageView2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/goku" />
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreP1"
+        app:srcCompat="@drawable/goku" android:contentDescription="@string/todo" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginBottom="110dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/imgPosionP1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toBottomOf="@+id/lblNombreP2"
-        app:srcCompat="@drawable/vegeta" />
+        app:layout_constraintTop_toBottomOf="@+id/lblNombreP1"
+        app:srcCompat="@drawable/vegeta" android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <TextView
+        android:id="@+id/lblVidap1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="43dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textview"
+        app:layout_constraintStart_toEndOf="@+id/lblNombreP1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textview"
+        app:layout_constraintEnd_toStartOf="@+id/lblNombreP2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgPosionP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/pocion" />
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:srcCompat="@drawable/pocion" android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:id="@+id/imageView4"
+    <ImageButton
+        android:id="@+id/imgAtaqueP1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/espadaderecha" />
+        android:layout_marginBottom="1dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgPosionP1"
+        app:layout_constraintStart_toEndOf="@+id/imgPosionP1"
+        app:srcCompat="@drawable/espadaizquierda" android:contentDescription="@string/todo" />
 
-    <ImageView
-        android:id="@+id/imageView5"
+    <ImageButton
+        android:id="@+id/imgAtaqueP2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="35dp"
-        android:layout_marginEnd="29dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toStartOf="@+id/imgPosionP2"
+        app:layout_constraintTop_toTopOf="@+id/imgPosionP2"
+        app:srcCompat="@drawable/espadaderecha" android:contentDescription="@string/todo" />
+
+    <ImageButton
+        android:id="@+id/imgPosionP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@drawable/pocion" />
-
-    <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
-        app:layout_constraintEnd_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView3"
-        app:srcCompat="@drawable/espadaizquierda" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:srcCompat="@drawable/pocion" android:contentDescription="@string/todo" />
 
 </android.support.constraint.ConstraintLayout>
